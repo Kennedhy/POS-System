@@ -23,14 +23,14 @@ public class SistemaMercadinho extends JFrame {
     private JLabel lblPainelFotoEstoque;
 
     public SistemaMercadinho() {
-        setTitle("Sistema Comercial - Controle de Vendas e Estoque");
+        setTitle("Sistema Comercial");
         setSize(1000, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
         JTabbedPane abasPrincipais = new JTabbedPane();
 
-        abasPrincipais.addTab("Frente de Loja (PDV)", criarPainelPDV());
+        abasPrincipais.addTab("Frente de Loja", criarPainel());
         abasPrincipais.addTab("Gestão de Produtos", criarPainelGestaoProdutos());
         abasPrincipais.addTab("Ver Estoque", criarPainelEstoque());
 
@@ -39,7 +39,7 @@ public class SistemaMercadinho extends JFrame {
         alimentarInterfaceComDadosExemplo();
     }
 
-    private JPanel criarPainelPDV() {
+    private JPanel criarPainel() {
         JPanel painel = new JPanel(new BorderLayout(10, 10));
 
         JPanel painelEntrada = new JPanel(new FlowLayout(FlowLayout.LEFT, 15, 10));
@@ -220,7 +220,4 @@ public class SistemaMercadinho extends JFrame {
         cbEditarSelecionarProduto.addItem("789333 - Óleo de Soja Liza 900ml");
     }
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new SistemaMercadinho().setVisible(true));
-    }
 }
