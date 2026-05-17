@@ -1,9 +1,8 @@
-package com.exemplo;
+package com.exemplo.view;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.io.File;
 
 public class SistemaMercadinho extends JFrame {
 

@@ -1,4 +1,6 @@
 package com.exemplo;
+import com.exemplo.view.SistemaMercadinho;
+
 import javax.swing.*;
 
 public class Main {
